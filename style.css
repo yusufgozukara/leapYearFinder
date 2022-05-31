@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid pink; */
+}
+
+body{
+    height: 100vh;
+    font-family: 'Kalam', cursive;
+    background-image: url(./images/abc.JPG);
+    background-size: cover;
+    background-position: bottom;
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    color: rgb(73, 73, 73);
+}
+
+.JS, .GH{
+    display: flex;
+    font-size: 20px;
+    margin-top: 20px;
+    /* padding-right: 5px; */
+}
+
+.JS div img{
+    padding-right: 5px;
+}
+.GH div img{
+    padding-right: 5px;
+}
+
+.GH p a{
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+}
+.GH p a:visited{
+    text-decoration: none;
+    color: rgb(73, 73, 73);
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    height: 50%;
+    transform: translateY(-80px);
+    color: rgb(26, 26, 26);
+    text-align: center;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    height: 85vh;
+    
+}
+
+.content h1{
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.content p{
+    font-size: 20px;
+    /* word-wrap: normal; */
+    width: 70%;
+    
+}
+
+.content .input{
+    margin-top: 15px;
+}
+
+.content .input input{
+    width: 100px;
+    padding-left: 5px;
+    height: 30px;
+    border-radius: 10px;
+    /* font-size: 10px; */
+    border: none;
+    /* background-color: gray;
+    opacity: 0.5;
+    color: white; */
+    outline: 2px solid rgb(26, 26, 26);
+    background: inherit;
+    color: rgb(26, 26, 26);
+    opacity: 0.8;
+
+}
+
+.content .input input::placeholder{
+    color: rgb(26, 26, 26);
+}
+
+.footer{
+    text-align: center;
+    color: rgb(26, 26, 26);
+}
+
+@media (max-width:480px){
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content{
+        margin-top: 100px;
+    }
+}
